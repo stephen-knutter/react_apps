@@ -11,10 +11,12 @@ class CheckList extends Component {
         <a href="#" className="checklist-task-remove" />
       </li>
     ));
-
     return(
       <div className="checkList">
         <ul>{tasks}</ul>
+        <input type="text"
+          className="checklist--add-task"
+          placeholder="Type then hit Enter to add a task" />
       </div>
     )
   }

@@ -10,3 +10,12 @@
   font-weight: bold;
   content: "+";
 }
+
+.checklist--add-task {
+  border: 1px dashed #bbb;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 3px;
+  outline: none;
+}

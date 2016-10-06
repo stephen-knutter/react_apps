@@ -7,14 +7,16 @@ let cardsList = [
   {
     id: 1,
     title: "Read the Book",
-    description: "I should read the whole book",
+    description: "I should read the **whole** book",
+    color: "#abdc28",
     status: "in-progress",
     tasks: []
   },
   {
     id: 2,
     title: "Write some code",
-    description: "Code along with the samples in the book",
+    description: "Find the source at [github](https://github.com/pro-react)",
+    color: "#299a0b",
     status: "todo",
     tasks: [
       {

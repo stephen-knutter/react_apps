@@ -19,9 +19,16 @@
   border-bottom: 5px solid transparent;
 }
 
-.card-title:before {
+.card-title-closed:before, .card-title-open:before {
   font-family: "FontAwesome";
   display: inline-block;
   width: 1em;
-  content: '\f18e';
+}
+
+.card-title-closed:before {
+  content: '\f101';
+}
+
+.card-title-open:before {
+  content: '\f103';
 }
