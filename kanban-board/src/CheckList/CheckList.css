@@ -1,0 +1,12 @@
+.checklist-task:first-child {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed #ddd;
+}
+
+.checklist-task:after {
+  display: inline-block;
+  color: red;
+  font-weight: bold;
+  content: "+";
+}
