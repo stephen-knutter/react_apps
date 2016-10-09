@@ -1,7 +1,7 @@
 import React, {Component, PropTypes} from 'react'
 import Card from '../Card/Card'
 
-import './List.css'
+import styles from './List.css'
 
 class List extends Component {
   render() {

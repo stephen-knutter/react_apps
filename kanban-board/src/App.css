@@ -1,9 +1,10 @@
+@import "~font-awesome/css/font-awesome.css";
+
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-
 
 html, body, #app {
   height: 100%;

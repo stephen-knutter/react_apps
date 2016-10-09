@@ -1,6 +1,5 @@
 import React, {Component, PropTypes} from 'react'
 import List from '../List/List'
-import './KanbanBoard.css'
 
 class KanbanBoard extends Component {
   render() {

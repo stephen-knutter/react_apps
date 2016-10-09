@@ -1,6 +1,6 @@
 import React, {Component, PropTypes} from 'react'
 
-import './CheckList.css'
+import styles from './CheckList.css'
 
 class CheckList extends Component {
   render() {

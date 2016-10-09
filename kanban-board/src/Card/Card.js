@@ -2,7 +2,7 @@ import React, {Component, PropTypes} from 'react'
 import marked from 'marked'
 import CheckList from '../CheckList/CheckList'
 
-import './Card.css'
+import styles from './Card.css'
 
 let titlePropType = (props, propName, componentName) => {
   if (props[propName]) {
