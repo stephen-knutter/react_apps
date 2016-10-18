@@ -23,10 +23,12 @@
     "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
+    "babel-polyfill": "^6.16.0",
     "css-loader": "^0.25.0",
     "cssnano": "^3.7.6",
     "font-awesome": "^4.6.3",
     "react": "^15.3.2",
+    "react-addons-update": "^15.3.2",
     "react-dom": "^15.3.2",
     "whatwg-fetch": "^1.0.0"
   }
