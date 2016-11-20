@@ -6,7 +6,7 @@ let BankActions = {
   createAccount() {
     AppDispatcher.dispatch({
       type: bankConstants.CREATED_ACCOUNT,
-      ammount: 0
+      amount: 0
     });
   },
 
