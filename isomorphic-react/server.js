@@ -7,6 +7,7 @@ import ContactsApp from './app/components/ContactsApp';
 const app = express();
 app.set('views', './');
 app.set('view engine', 'ejs');
+
 app.use(express.static(__dirname + '/public'));
 
 const contacts = JSON.parse(fs.readFileSync(__dirname + '/public/contacts.json', 'utf8'));
@@ -14,13 +15,13 @@ const contacts = JSON.parse(fs.readFileSync(__dirname + '/public/contacts.json',
 const ContactsAppFactory = React.createFactory(ContactsApp);
 
 app.get('/', (request, response) => {
-  let componentInstance = ContactsAppFactory({initialData: contacts});
+  let componentInstance = ContactsAppFactory({contacts: contacts});
   response.render('index', {
     reactInitialData: JSON.stringify(contacts),
     content: renderToString(componentInstance)
   });
 });
 
-app.listen(3000, () => {
-  console.log('Express app listening on port 3000');
-})
+app.listen(5000, () => {
+  console.log('Express app listening on port 5000');
+});

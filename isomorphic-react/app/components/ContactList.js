@@ -2,7 +2,7 @@ import React, {Component, PropTypes} from 'react';
 
 class ContactList extends Component {
   render() {
-    let filteredContacts = this.props.contacts.filter(
+    var filteredContacts = this.props.contacts.filter(
       (contact) => contact.name.indexOf(this.props.filterText) !== -1
     );
     return(

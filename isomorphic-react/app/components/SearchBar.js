@@ -2,15 +2,17 @@ import React, {Component, PropTypes} from 'react';
 
 class SearchBar extends Component {
   handleChange(event) {
-    console.log(event);
     this.props.onUserInput(event.target.value)
   }
 
   render() {
-    return <input type="search"
-                  placeholder="search"
-                  value={this.props.filterText}
-                  onChange={this.handleChange.bind(this)} />
+    return(
+      <input
+        type="search"
+        placeholder="search"
+        value={this.props.filterText}
+        onChange={this.handleChange.bind(this)} />
+    )
   }
 }
 
