@@ -5,7 +5,7 @@ import SearchBar from './SearchBar';
 
 class ContactsApp extends Component {
   constructor() {
-    super(...arguments)
+    super(...arguments);
     this.state = {
       contacts: this.props.initialData || [],
       filterText: ''
@@ -13,7 +13,7 @@ class ContactsApp extends Component {
   }
 
   componentDidMount() {
-    if (!this.props.initialData) {
+    if (!this.props.initialData.length) {
       ContactsApp.requestInitialData().then(contacts => {
         this.setState({contacts});
       });
